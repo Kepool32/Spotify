@@ -1,0 +1,27 @@
+.player{
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  bottom:0;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #242f38;
+}
+
+.progressBar{
+  width: 0%;
+  height: 8px;
+  borderRadius: 4;
+  transition: width 0.5s ease-in-out;
+}
+
+.trackprogress{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+
+}
+

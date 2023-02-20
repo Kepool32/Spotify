@@ -1,0 +1,22 @@
+import {Module} from "@nestjs/common";
+import {TrackController} from "./track.controller";
+import {MongooseModule} from "@nestjs/mongoose";
+import {Track, TrackSchema} from "./schema/track.shema";
+import {Comment,CommentsSchema} from "./schema/coments.schema";
+import {TrackService} from "./track.service";
+import {FileService} from "../file/file.service";
+
+
+@Module({
+
+    imports:[
+        MongooseModule.forFeature([{name:Track.name,schema:TrackSchema}]),
+        MongooseModule.forFeature([{name:Comment.name,schema:CommentsSchema}]),
+    ],
+    controllers:[TrackController],
+    providers:[TrackService,FileService]
+
+
+    }
+)
+export class TrackModule{}

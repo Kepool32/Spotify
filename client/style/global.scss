@@ -1,0 +1,61 @@
+
+
+
+p{
+  color:var(#{--text-background-default});
+}
+h1{
+  color:var(#{--text-background-default});
+}
+
+h3{
+  color:var(#{--text-background-default});
+}
+h5{
+  color:var(#{--text-background-default});
+}
+body{
+  height: 100%;
+  background-color:var(#{--body-background-default}) ;
+}
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+  background-color:var(#{--body-background-default}) ;
+}
+.css-cveggr-MuiListItemIcon-root{
+  color:var(#{--text-background-default});
+}
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper{
+  color:var(#{--text-background-default});
+/*  border-right: 0.5px solid var(#{--text-background-default});*/
+}
+.css-1oqqzyl-MuiContainer-root {
+  max-width: 80%;
+}
+
+$body-background-dark: #141b21;
+$body-background-light:#fff;
+
+
+:root{
+  --body-background-dark: #{$body-background-dark};
+  --body-background-light: #{$body-background-light};
+  --body-background-default: var(#{--body-background-dark});
+
+
+  --text-background-dark: #{$body-background-dark};
+  --text-background-light: #{$body-background-light};
+  --text-background-default: var(#{--text-background-light})
+}
+
+
+.css-1ay3n0k {
+  padding-right: 7%;
+  margin-top: 56px;
+  margin-bottom: 16px;
+  padding-left: 7%;
+}
+
+
+.css-1fh410u-MuiGrid-root>.MuiGrid-item {
+  padding-left: 7%;
+}
